@@ -5,7 +5,7 @@ var $body = document.body;
 var interval;
 
 var hexadecimal = function(){ 
-  return "#" + parseInt(Math.random() * 1000000);
+	return "#" + parseInt(Math.random() * 1000000);
 };
 
 var changeBackgroundColor = function(){
@@ -13,13 +13,13 @@ var changeBackgroundColor = function(){
 };
 
 $buttonChange.addEventListener("click", function(event) {
-  clearInterval(interval);
-  changeBackgroundColor();
+	clearInterval(interval);
+	changeBackgroundColor();
 });
 
 $buttonBack.addEventListener("click", function(event){
-  clearInterval(interval);
-  $body.style.backgroundColor = "#FFF";
+	clearInterval(interval);
+	$body.style.backgroundColor = "#FFF";
 });
 
 $buttonAuto.addEventListener("click", function(){
